@@ -1,0 +1,68 @@
+
+.right-content{
+  margin-left: 60px;
+  background-color: transparent;
+  width:50%;
+  position: absolute;
+  bottom:110px;
+}
+
+.dots{
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active{
+  background-color: white;
+}
+
+#lt{
+  background-color: transparent;
+  width: 90px;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: url('../fonts/BananaGrotesk-Semibold.otf');
+  color: #FFFFFF;
+}
+
+#st{
+  background-color: transparent;
+  width:220px;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: url('../fonts/BananaGrotesk-Light.otf');
+  color: #FFE8DF;
+}
+
+.bg1{
+  background-image: url('../images/pic1.png');
+  width: 50%;
+  position: absolute;
+  top:0px;
+  right:0px;
+  height:100%;
+  z-index: 0;
+}
+
+.bg2{
+  background-image: url('../images/pic2.png');
+  width: 50%;
+  position: absolute;
+  top:0px;
+  right:0px;
+  height:100%;
+  z-index: 0;
+}
+
+.social{
+    position: absolute;
+    padding: 25px 25px;
+    bottom:0;
+    right:0;
+    background-color: transparent;
+}
