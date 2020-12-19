@@ -1,17 +1,15 @@
 import React from 'react';
-import '../index.css';
+import '../styles/index.css';
 import Slider from './Slider';
+import Navbar from './Navbar';
 
-const Blog = () =>{
+const Blog = (): React$Node =>{
     return (
         <>
+        <Navbar />
         <Slider />
         <h1> Blog Page </h1>
-        <h6>
-        Lorem Ipsum has been the industry's standard dummy text ever since the
-        1500s, when an unknown printer took a galley of type and scrambled it to
-        make a type specimen book.
-      </h6>
+      
         </>
     );
 };

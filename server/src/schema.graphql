@@ -1,0 +1,12 @@
+type Query {
+  getData(id: Int!): String!
+}
+
+type Mutation {
+  sendMessage(email: String!, message: String!): Entry!
+}
+
+type Entry {
+  email: String!
+  message: String!
+}

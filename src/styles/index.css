@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FDE3D9;
+
+}
+
+h1{
+  padding-left: 60px;
+  width: 45%;
+  font-family: url('../fonts/BananaGrotesk-Medium.otf');
+  font-size: 42px;
+  position: fixed;
+  top:215px;
+  z-index: 0;
+}
+
+h6{
+  padding-left: 60px;
+  width: 40%;
+  font-family: url('../fonts/BananaGrotesk-Light.otf');
+  font-size: 16px;
+  position: fixed;
+  top:365px;
+  color: #6D6D6D;
+  line-height: 27px;
+  z-index: 0;
+}
+
+.badge{
+  left: 50px;
+  position: fixed;
+  bottom: 10px;
+}
+
+@media screen and (max-width: 960px){
+  .badge>img{
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  
+}

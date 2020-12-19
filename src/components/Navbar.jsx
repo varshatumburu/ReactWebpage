@@ -1,11 +1,13 @@
+// @flow
+
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Logo from "../images/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "./Navbar.css";
+import "../styles/Navbar.css";
 import { IconContext } from "react-icons/lib";
 
-function Navbar() {
+const Navbar=(): React$Node => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -20,33 +22,49 @@ function Navbar() {
             <NavLink to="/" className="navbar-icon" onClick={closeMobileMenu}>
               <img src={Logo} alt="Cat N Dog" />
             </NavLink>
+
             <div className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </div>
+
             <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
-                <NavLink to="/about" className="nav-links" onClick={closeMobileMenu}>
+                <NavLink
+                  to="/about"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
                   About
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/blog" className="nav-links" onClick={closeMobileMenu}>
+                <NavLink
+                  to="/blog"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
                   Blog
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/careers" className="nav-links" onClick={closeMobileMenu}>
+                <NavLink
+                  to="/careers"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
                   Careers
                 </NavLink>
               </li>
-              
+
               <li className="nav-item">
-                <NavLink to="/contact" className="nav-links" onClick={closeMobileMenu}>
+                <NavLink
+                  to="/contact"
+                  className="nav-links"
+                  onClick={closeMobileMenu}
+                >
                   Contact
                 </NavLink>
               </li>
-              
-              
             </ul>
           </div>
         </div>
